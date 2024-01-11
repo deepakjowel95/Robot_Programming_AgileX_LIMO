@@ -1,4 +1,4 @@
-# LIMO ROS2
+# Robot_programming_Assingment
 
 This repository contains code for **ROS2 development with the LIMO robot**. Please note that:
 
@@ -7,13 +7,6 @@ This repository contains code for **ROS2 development with the LIMO robot**. Plea
 
 Since the onboard computer equipped on the LIMO robot is Nvidia Jetson Nano which only works with Jetpack v4.x (Ubuntu 18.04), there is no easy way to do native development with an active ROS2 LTS release on the robot ([REP2000](https://www.ros.org/reps/rep-2000.html)). Thus the packages within this repository are developed and only tested in a ROS Humble Docker container (docker image: westonrobot/limo_ros:humble).
 
-## Changelog
-
-### 2023-08-22
-
-- Moved obstacle layer to local costmap
-- Cleaned up old ros1 costmap params
-- **Set environment flag to use cyclone dds to fix costmap obstacle not working**
 
 ## Setup development environment
 
@@ -22,8 +15,8 @@ You can set up the development environment either on the Jetson Nano or your des
 * **Clone the repo to the computer**
 
 ```bash
-$ git clone https://github.com/westonrobot/limo_ros2.git
-$ cd limo_ros2
+$ git clone https://github.com/deepakjowel95/Robot_programming_Assessment.git
+$ cd Robot_programming_Assingment
 ```
 
 * **Install VS Code with [Remote Development Plugins](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.vscode-remote-extensionpack)**
@@ -134,7 +127,7 @@ xhost +
 # export the display
 export DISPLAY=:0
 ```
-
+ 
 ## Viewing the output of the camera 
 Note: Tested on Ubuntu 22 (POP) and Jetpack 4.6 w/docker
 
